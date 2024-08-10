@@ -39,12 +39,14 @@ android {
 }
 
 dependencies {
-
+    implementation("androidx.room:room-runtime:2.6.1")
+    implementation("androidx.room:room-ktx:2.6.1")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    testImplementation("androidx.room:room-testing:2.6.1")
     testImplementation(libs.junit)
     testImplementation(libs.junit.junit)
     testImplementation(libs.junit.junit)
@@ -54,6 +56,7 @@ dependencies {
     testImplementation(libs.junit.junit)
     testImplementation(libs.junit.junit)
     testImplementation(libs.junit.junit)
+    androidTestImplementation("androidx.room:room-testing:2.6.1")
     androidTestImplementation("androidx.test:core:1.5.0-rc01")
     androidTestImplementation("androidx.test:core-ktx:1.6.1")
     androidTestImplementation("androidx.test.ext:junit:1.2.1")
